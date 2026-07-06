@@ -1,0 +1,143 @@
+:root {
+    --azul-fundo: #eaf5ff;
+    --azul-principal: #2477b8;
+    --azul-claro: #5aaee8;
+    --azul-escuro: #185985;
+    --branco: #ffffff;
+    --texto: #1f2937;
+    --borda: #d7e7f5;
+    --sombra: 0 20px 45px rgba(24, 89, 133, 0.18);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 32px 16px;
+    background: linear-gradient(135deg, var(--azul-fundo), #cfeaff);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: min(100%, 520px);
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: var(--sombra);
+}
+
+form,fieldset {
+    width: 100%;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+legend {
+    width: 100%;
+    margin-bottom: 18px;
+    color: var(--azul-escuro);
+    font-size: 1.45rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+label {
+    color: var(--azul-escuro);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+input,select {
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: var(--texto);
+    background: var(--branco);
+    font: inherit;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,select:focus {
+    border-color: var(--azul-claro);
+    box-shadow: 0 0 0 3px rgba(90, 174, 232, 0.22);
+}
+
+input[type="file"] {
+    padding: 9px;
+    background: #f7fbff;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+    border: 0;
+    background: var(--azul-principal);
+    color: var(--branco);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background: var(--azul-escuro);
+}
+
+input[type="button"]:active {
+    transform: translateY(1px);
+}
+
+p {
+    margin: 18px 0 0;
+    color: #52616f;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+a {
+    color: var(--azul-principal);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+br {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        align-items: flex-start;
+        padding: 18px 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section {
+        padding: 22px 18px;
+    }
+
+    legend {
+        font-size: 1.25rem;
+    }
+}
