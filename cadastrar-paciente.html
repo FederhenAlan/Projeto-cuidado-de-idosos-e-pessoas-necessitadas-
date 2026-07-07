@@ -1,0 +1,95 @@
+<section>
+  <div>
+    <form>
+      <fieldset>
+        <legend>Cadastro do paciente</legend>
+        <label for="nome-paciente">Nome do paciente:</label>
+        <input type="text" name="nome-paciente" id="nome-paciente">
+        <br>
+
+        <label for="data-nascimento-paciente">Qual a data de nascimento:</label>
+        <input type="date" name="data-nascimento-paciente" id="data-nascimento-paciente">
+        <br>
+
+        <label for="peso">Peso (kg)</label>
+        <input type="number" id="peso" name="peso" step="0.1" placeholder="80kg"/>
+        <br/>
+        
+        <label for="altura">Altura (cm)</label>
+        <input type="number" id="altura" name="altura" placeholder="180 centímetros"/>
+        <br/>
+
+        <label for="tipo-sanguineo">Tipo-sanguíneo:</label>
+        <select name="tipo-sanguineo" id="tipo-sanguineo">
+          <option value="a+">A+</option>
+          <option value="a-">A-</option>
+          <option value="b+">B+</option>
+          <option value="b-">B-</option>
+          <option value="ab+">AB+</option>
+          <option value="ab-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+        <br/>
+
+        <label for="nivel-de-dependencia">Nível de dependência</label>
+        <select name="nivel-de-dependencia" id="nivel-de-dependencia">
+          <option value="independente">Independente</option>
+          <option value="parcialmente_dependente">Parcialmente dependente</option>
+          <option value="totalmente_dependente">Totalmente dependente</option>
+        </select>
+        <br/>
+
+        <!-- EM JS FAZER UM IF SE A DEPENDENCIA FOI INDEPENDENTE PARA NAO TER O CONTEUDO ABAIXO
+        <label for="banho">Banho</label>
+        <input type="checkbox" id="banho" name="atividades" value="banho">
+        <br>
+
+        <label for="vestir-se">Vestir-se</label>
+        <input type="checkbox" id="vestir-se" name="atividades" value="vestir-se">
+        <br>
+
+        <label for="higiene">Higiene</label>
+        <input type="checkbox" id="higiene" name="atividades" value="higiene">
+        <br>
+
+        <label for="transferencia">Transferência</label>
+        <input type="checkbox" id="transferencia" name="atividades" value="transferencia">
+        <br>
+
+        <label for="continencia">Continência</label>
+        <input type="checkbox" id="continencia" name="atividades" value="continencia">
+        <br>
+
+        <label for="alimentacao">Alimentação</label>
+        <input type="checkbox" id="alimentacao" name="atividades" value="alimentacao">
+        <br>
+
+        <label for="uso-do-telefone">Uso do telefone</label>
+        <input type="checkbox" id="uso-do-telefone" name="atividades" value="telefone">
+        <br>
+
+        <label for="compras">Compras</label>
+        <input type="checkbox" id="compras" name="atividades" value="compras">
+        <br>
+
+        <label for="preparo-refeicoes">Preparo de refeições</label>
+        <input type="checkbox" id="preparo-refeicoes" name="atividades" value="preparo-refeicoes">
+        <br>
+
+        <label for="tarefas-domesticas">Tarefas domésticas</label>
+        <input type="checkbox" id="tarefas-domesticas" name="atividades" value="tarefas-domesticas">
+    
+        -->
+
+        <label for="hobby">Hobbies:</label>
+        <input type="text" name="hobby" id="hobby">
+
+        <label for="historico-medico">Histórico médico:</label>
+        <input type="text" name="historico-medico" id="historico-medico">
+
+        <input type="button" value="Criar paciente"/>
+      </fieldset>
+    </form>
+  </div>
+</section>
