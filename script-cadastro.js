@@ -25,16 +25,16 @@ tipoUsuario.addEventListener("change",function(){
                 </select>
 
                 <label for="CPF">CPF:</label>
-                <input type="text" name="CPF" id="CPF" required>
+                <input type="text" name="CPF" id="CPF" maxlength="11" required>
                 <br>
 
                 <label for="numero-telefone">Telefone:</label>
-                <input type="tel" name="numero-telefone" id="numero-telefone" required>
+                <input type="tel" name="numero-telefone" id="numero-telefone" maxlength="15" required>
                 <br>
 
 
-                <label for="foto">Foto:</label>
-                <input type="file" name="foto" id="fotoo" accept="image/*">
+                <label for="foto-de-perfil">Foto de perfil:</label>
+                <input type="file" name="foto-de-perfil" id="foto-de-perfil" accept="image/*">
                 <br>
 
                 <label for="emailCuidador">Email:</label>
@@ -71,19 +71,19 @@ tipoUsuario.addEventListener("change",function(){
                 </select>
 
                 <label for="CPF">CPF:</label>
-                <input type="text" name="CPF" id="CPF" required>
+                <input type="text" name="CPF" id="CPF" maxlength="11" required>
                 <br>
 
                 <label for="numero-telefone">Telefone:</label>
-                <input type="tel" name="numero-telefone" id="numero-telefone" required>
+                <input type="tel" name="numero-telefone" id="numero-telefone" maxlength="15" required>
                 <br>
 
                 <label for="especializacoes">Especializações:</label>
                 <input type="text" name="especializacoes" id="especializacoes" required>
                 <br>
 
-                <label for="foto">Foto:</label>
-                <input type="file" name="foto" id="foto" accept="image/*">
+                <label for="foto-de-perfil">Foto de perfil:</label>
+                <input type="file" name="foto-de-perfil" id="foto-de-perfil" accept="image/*">
                 <br>
 
                 <label for="emailCuidador">Email:</label>
